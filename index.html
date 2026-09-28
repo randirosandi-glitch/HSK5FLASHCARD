@@ -107,6 +107,17 @@ body.dark .source{color:#ff8d78}
   .sentence{font-size:19px}
   .btn{min-height:56px;font-size:17px}
 }
+
+/* Remove mobile browser tap/focus highlight without disabling interaction */
+.card, .card *, button, a, [role="button"] {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+.card:focus, .card:focus-visible, button:focus, button:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
 </style>
 
 <style id="compact-v5">
